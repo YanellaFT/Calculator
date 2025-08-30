@@ -7,6 +7,7 @@ let keyPi, keyExp, keySqrt, keyParO, keyParC;
 
 function setup() {
     createCanvas(400, 550);
+    background("#575353ff");
 
     textStyle(BOLD);
     textSize(20);
@@ -113,23 +114,47 @@ function setup() {
 }
 
 function draw() {
-    background("#575353ff");
+    if (key0.mouse.pressed()) {
+        total = total + 0;
+        screen.text = "Adding total: " + total;
 
- 
-    if (keyAdd.mouse.pressed()) {
-        screen.text = "Adding total: 0";
-
-        if (key0.mouse.pressed()) {
-            total = total + 0;
-        }
-        if (key1.mouse.pressed()) {
-            total = total + 1;
-        }
-        if (key2.mouse.pressed()) {
-            total = total + 2;
-        }
-    
-        screen.text = "Adding total: " + total
     }
-
+    if (key1.mouse.pressed()) {
+        total = total + 1;
+        screen.text = "Adding total: " + total;
+            
+    }
+    if (key2.mouse.pressed()) {
+        total = total + 2;
+        screen.text = "Adding total: " + total;
+    }
+    if (key3.mouse.pressed()) {
+        total = total + 3;
+        screen.text = "Adding total: " + total;
+    }
+    if (key4.mouse.pressed()) {
+        total = total + 4;
+        screen.text = "Adding total: " + total;
+    }
+    if (key5.mouse.pressed()) {
+        total = total + 5;
+        screen.text = "Adding total: " + total;
+    }
+    if (key6.mouse.pressed()) {
+        total = total + 6;
+        screen.text = "Adding total: " + total;
+    }
+    if (key7.mouse.pressed()) {
+        total = total + 7;
+        screen.text = "Adding total: " + total;
+    }
+    if (key8.mouse.pressed()) {
+        total = total + 8;
+        screen.text = "Adding total: " + total;
+    }
+    if (key9.mouse.pressed()) {
+        total = total + 9;
+        screen.text = "Adding total: " + total;
+    }
 }
+
